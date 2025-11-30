@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { ServerStatusDash } from './dashboards/server-status-dash/server-status-dash';
 import { TrafficDash } from './dashboards/traffic-dash/traffic-dash';
-import { SupportTicketsDash } from './dashboards/support-tickets-dash/support-tickets-dash.component';
+import { SupportTicketsDash } from './dashboards/tickets/support-tickets-dash/support-tickets-dash.component';
 import { DashboardItemComponent } from './dashboards/dashboard-item/dashboard-item.component';
 
 @Component({
