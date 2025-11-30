@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from './header/header.component';
+import { ServerStatusDash } from './dashboards/server-status-dash/server-status-dash';
+import { TrafficDash } from './dashboards/traffic-dash/traffic-dash';
+import { SupportTicketsDash } from './dashboards/support-tickets-dash/support-tickets-dash';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
+  imports: [HeaderComponent, ServerStatusDash, TrafficDash, SupportTicketsDash],
 })
 export class AppComponent {
   dummyTrafficData = [
@@ -36,6 +41,5 @@ export class AppComponent {
       value: 589,
     },
   ];
-  maxTraffic = Math.max(...this.dummyTrafficData.map((data) => data.value));
   currentStatus = 'online';
 }
