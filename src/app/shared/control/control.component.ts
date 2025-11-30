@@ -3,9 +3,9 @@ import { Component, input } from '@angular/core';
 @Component({
   selector: 'app-control',
   imports: [],
-  templateUrl: './control.html',
-  styleUrl: './control.css',
+  templateUrl: './control.component.html',
+  styleUrl: './control.component.css',
 })
-export class Control {
+export class ControlComponent {
   label = input.required<string>();
 }
